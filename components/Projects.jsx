@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, ExternalLink, Code2 } from "lucide-react";
+import { Github, ExternalLink, Brain, ShoppingCart, Wallet, Languages, MessageSquare, Cloud } from "lucide-react";
 import Image from "next/image";
 
 export default function Projects() {
@@ -12,8 +12,9 @@ export default function Projects() {
     description: "Gemini-powered hiring system conducting automated technical interviews and SWOT evaluations.",
     techStack: ["FastAPI", "React", "Firestore", "Cloud Tasks", "Gemini AI"],
     image: "/projects/ai-interview.jpg",
-    githubLink: "https://github.com/naman-1905",
-    liveLink: "https://your-live-demo.com",
+    icon: Brain,
+    githubLink: "https://github.com/naman-1905/AI-Interview-Platform",
+    liveLink: null,
     featured: false
   },
   {
@@ -22,8 +23,9 @@ export default function Projects() {
     description: "Cloud-native e-commerce platform supporting dynamic EMI plans and pricing logic.",
     techStack: ["Next.js", "Express", "PostgreSQL", "Docker", "Kubernetes"],
     image: "/projects/emi.jpg",
-    githubLink: "https://github.com/naman-1905",
-    liveLink: "https://your-live-demo.com",
+    icon: ShoppingCart,
+    githubLink: "https://github.com/naman-1905/EMI-Shopping-App",
+    liveLink: null,
     featured: false
   },
   {
@@ -32,8 +34,9 @@ export default function Projects() {
     description: "Microservice-based finance manager for tracking income and expenses securely.",
     techStack: ["Next.js", "FastAPI", "Express", "Flask", "PostgreSQL"],
     image: "/projects/finance.jpg",
-    githubLink: "https://github.com/naman-1905",
-    liveLink: "https://your-live-demo.com",
+    icon: Wallet,
+    githubLink: "https://github.com/naman-1905/EMI-Shopping-App",
+    liveLink: null,
     featured: false
   },
   {
@@ -42,8 +45,9 @@ export default function Projects() {
     description: "Interactive Japanese learning platform for Kanji, grammar and vocabulary.",
     techStack: ["Next.js", "FastAPI", "MongoDB", "PostgreSQL"],
     image: "/projects/kahichan.jpg",
-    githubLink: "https://github.com/naman-1905",
-    liveLink: "https://your-live-demo.com",
+    icon: Languages,
+    githubLink: null,
+    liveLink: "https://kahichan.com",
     featured: false
   },
   {
@@ -52,8 +56,9 @@ export default function Projects() {
   description: "Locally hosted AI chatbot powered by Gemma 1B running on GPU.",
   techStack: ["Next.js", "Tailwind CSS", "Gemma", "Local AI"],
   image: "/projects/chatbot.jpg",
-  githubLink: "https://github.com/naman-1905",
-  liveLink: "https://ai.halfskirmish.com",
+  icon: MessageSquare,
+  githubLink: "https://github.com/naman-1905/AI-Chatbot",
+  liveLink: null,
   featured: true
 },
   {
@@ -62,8 +67,9 @@ export default function Projects() {
   description: "Real-time weather app using IP geolocation and external API integration.",
   techStack: ["Next.js", "Tailwind CSS", "WeatherAPI"],
   image: "/projects/weather.jpg",
+  icon: Cloud,
   githubLink: "https://github.com/naman-1905/Weather-App",
-  liveLink: "https://your-live-demo.com",
+  liveLink: null,
   featured: false
 }
   ];
@@ -122,97 +128,105 @@ export default function Projects() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {projects.map((project) => (
-            <motion.div
-              key={project.id}
-              variants={itemVariants}
-              className="group relative rounded-xl bg-white/5 backdrop-blur-sm border border-white/10
-                         hover:border-[#e66500]/50 transition-all duration-300 overflow-hidden"
-              whileHover={{ y: -10 }}
-            >
-              {/* Project Image */}
-              <div className="relative w-full h-48 bg-gradient-to-br from-[#e66500]/20 to-transparent overflow-hidden">
-                {/* Placeholder - Replace with actual Image component when you have images */}
-                <div className="w-full h-full flex items-center justify-center bg-black/40">
-                  <Code2 size={48} className="text-[#e66500]/50" />
-                </div>
-                {/* 
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                */}
-                
-                {/* Featured Badge */}
-                {project.featured && (
-                  <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#e66500] text-black text-xs font-bold">
-                    Featured
+          {projects.map((project) => {
+            const IconComponent = project.icon;
+            
+            return (
+              <motion.div
+                key={project.id}
+                variants={itemVariants}
+                className="group relative rounded-xl bg-white/5 backdrop-blur-sm border border-white/10
+                           hover:border-[#e66500]/50 transition-all duration-300 overflow-hidden"
+                whileHover={{ y: -10 }}
+              >
+                {/* Project Image */}
+                <div className="relative w-full h-48 bg-gradient-to-br from-[#e66500]/20 to-transparent overflow-hidden">
+                  {/* Placeholder with project icon */}
+                  <div className="w-full h-full flex items-center justify-center bg-black/40">
+                    <IconComponent size={48} className="text-[#e66500]/50" />
                   </div>
-                )}
-              </div>
-
-              {/* Project Content */}
-              <div className="p-6">
-                {/* Title */}
-                <h3 className="text-white font-bold text-xl mb-3 group-hover:text-[#e66500] transition-colors duration-300">
-                  {project.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-gray-400 text-sm mb-4 line-clamp-3">
-                  {project.description}
-                </p>
-
-                {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.techStack.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1 rounded-full text-xs font-medium bg-[#e66500]/10 text-[#e66500] border border-[#e66500]/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Links */}
-                <div className="flex gap-3">
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg
-                             bg-white/5 border border-white/20 text-white text-sm font-medium
-                             hover:bg-white/10 hover:border-[#e66500]/50 transition-all duration-300"
-                  >
-                    <Github size={16} />
-                    Code
-                  </a>
+                  {/* 
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  */}
                   
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg
-                             bg-[#e66500] text-black text-sm font-bold
-                             hover:bg-[#e66500]/90 transition-all duration-300"
-                  >
-                    <ExternalLink size={16} />
-                    Demo
-                  </a>
+                  {/* Featured Badge */}
+                  {project.featured && (
+                    <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#e66500] text-black text-xs font-bold">
+                      Featured
+                    </div>
+                  )}
                 </div>
-              </div>
 
-              {/* Hover Glow Effect */}
-              <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-                   style={{
-                     background: 'radial-gradient(circle at center, rgba(230, 101, 0, 0.1) 0%, transparent 70%)'
-                   }}
-              />
-            </motion.div>
-          ))}
+                {/* Project Content */}
+                <div className="p-6">
+                  {/* Title */}
+                  <h3 className="text-white font-bold text-xl mb-3 group-hover:text-[#e66500] transition-colors duration-300">
+                    {project.title}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                    {project.description}
+                  </p>
+
+                  {/* Tech Stack */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.techStack.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 rounded-full text-xs font-medium bg-[#e66500]/10 text-[#e66500] border border-[#e66500]/20"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Links */}
+                  <div className="flex gap-3">
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${project.liveLink ? 'flex-1' : 'flex-1'} flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg
+                               bg-white/5 border border-white/20 text-white text-sm font-medium
+                               hover:bg-white/10 hover:border-[#e66500]/50 transition-all duration-300`}
+                      >
+                        <Github size={16} />
+                        Code
+                      </a>
+                    )}
+                    
+                    {project.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${project.githubLink ? 'flex-1' : 'flex-1'} flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg
+                               bg-[#e66500] text-black text-sm font-bold
+                               hover:bg-[#e66500]/90 transition-all duration-300`}
+                      >
+                        <ExternalLink size={16} />
+                        Demo
+                      </a>
+                    )}
+                  </div>
+                </div>
+
+                {/* Hover Glow Effect */}
+                <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                     style={{
+                       background: 'radial-gradient(circle at center, rgba(230, 101, 0, 0.1) 0%, transparent 70%)'
+                     }}
+                />
+              </motion.div>
+            );
+          })}
         </motion.div>
 
         {/* View All Projects Button */}
@@ -224,7 +238,7 @@ export default function Projects() {
           transition={{ delay: 0.5, duration: 0.6 }}
         >
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/naman-1905"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-lg

@@ -4,36 +4,36 @@ import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
 
 export default function WorkExperience() {
-  const experiences = [
-    {
-      id: 1,
-      company: "Tech Corp",
-      role: "Senior Full Stack Developer",
-      period: "2022 - Present",
-      description: "Leading development of scalable web applications"
-    },
-    {
-      id: 2,
-      company: "Digital Solutions",
-      role: "Full Stack Developer",
-      period: "2020 - 2022",
-      description: "Built and maintained multiple client projects"
-    },
-    {
-      id: 3,
-      company: "Startup Inc",
-      role: "Junior Developer",
-      period: "2019 - 2020",
-      description: "Developed frontend features and API integrations"
-    },
-    {
-      id: 4,
-      company: "Web Agency",
-      role: "Intern Developer",
-      period: "2018 - 2019",
-      description: "Assisted in building responsive websites"
-    }
-  ];
+const experiences = [
+  {
+    id: 1,
+    company: "Xobin Technologies",
+    role: "Software Engineer",
+    period: "Dec 2025 - Present",
+    description: "Migrated interview platform to scalable Next.js & FastAPI architecture"
+  },
+  {
+    id: 2,
+    company: "Zimyo Consulting",
+    role: "UI/UX & Creative Designer",
+    period: "Feb 2025 - May 2025",
+    description: "Designed product pages and implemented UI using Figma"
+  },
+  {
+    id: 3,
+    company: "RAPIFUZZ",
+    role: "Cyber Security Researcher",
+    period: "Jan 2024 - Jun 2024",
+    description: "Performed web application security testing using penetration tools"
+  },
+  {
+    id: 4,
+    company: "TEDxNIIT University",
+    role: "Capture & Post-Production",
+    period: "2020 - 2022",
+    description: "Worked as the volunteer and then a core team member."
+  }
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -56,7 +56,7 @@ export default function WorkExperience() {
   };
 
   return (
-    <section className="relative w-full min-h-[80vh] flex items-center px-4 md:px-8 lg:px-12 py-20 overflow-hidden">
+    <section className="relative w-full min-h-[40vh] flex items-center px-4 md:px-8 lg:px-12 py-20 overflow-hidden">
       
       {/* Background Glow */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]

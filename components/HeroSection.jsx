@@ -62,7 +62,7 @@ export default function Hero() {
       overflow-hidden">
 
       {/* Subtle Orange Glow */}
-      <div className="absolute left-0 top-0 w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]
+      <div className="absolute left-0 top-0 w-75 h-75 md:w-100 md:h-100 lg:w-125 lg:h-125
                       bg-[#e66500] opacity-10 blur-[150px] 
                       rounded-full -z-10" />
 
@@ -163,7 +163,7 @@ export default function Hero() {
             
             {/* Rotating Ring 1 - Clockwise */}
             <motion.div 
-              className="absolute w-[320px] h-[320px] md:w-[420px] md:h-[420px] lg:w-[490px] lg:h-[490px] 
+              className="absolute w-80 h-80 md:w-105 md:h-105 lg:w-122.5 lg:h-122.5 
                           rounded-full border border-[#e66500]/20"
               animate={{ rotate: 360 }}
               transition={{
@@ -175,7 +175,7 @@ export default function Hero() {
             
             {/* Rotating Ring 2 - Counter Clockwise */}
             <motion.div 
-              className="absolute w-[340px] h-[340px] md:w-[440px] md:h-[440px] lg:w-[510px] lg:h-[510px] 
+              className="absolute w-85 h-85 md:w-110 md:h-110 lg:w-127.5 lg:h-127.5 
                           rounded-full border border-[#e66500]/10"
               animate={{ rotate: -360 }}
               transition={{
@@ -187,7 +187,7 @@ export default function Hero() {
             
             {/* Pulsing Glow */}
             <motion.div 
-              className="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[470px] lg:h-[470px] 
+              className="absolute w-75 h-75 md:w-100 md:h-100 lg:w-117.5 lg:h-117.5 
                           rounded-full bg-[#e66500]/5 blur-2xl"
               animate={{
                 scale: [1, 1.1, 1],
@@ -202,7 +202,7 @@ export default function Hero() {
             
             {/* Orbiting Dots Container */}
             <motion.div 
-              className="absolute w-[360px] h-[360px] md:w-[460px] md:h-[460px] lg:w-[530px] lg:h-[530px]"
+              className="absolute w-90 h-90 md:w-115 md:h-115 lg:w-132.5 lg:h-132.5"
               animate={{ rotate: 360 }}
               transition={{
                 duration: 30,
@@ -306,7 +306,7 @@ export default function Hero() {
 
           {/* Profile Image */}
           <motion.div 
-            className="relative w-[280px] h-[280px] md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px] 
+            className="relative w-70 h-70 md:w-95 md:h-95 lg:w-112.5 lg:h-112.5 
                         rounded-full bg-white/5 flex items-center justify-center z-10"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}

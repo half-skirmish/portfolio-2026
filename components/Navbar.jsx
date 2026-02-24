@@ -29,6 +29,13 @@ export default function Navbar() {
         </button>
 
         <button
+          onClick={() => scrollToSection('about')}
+          className="hover:text-[#e66500] transition-colors duration-200 cursor-pointer"
+        >
+          About
+        </button>
+
+        <button
           onClick={() => scrollToSection('work')}
           className="hover:text-[#e66500] transition-colors duration-200 cursor-pointer"
         >
@@ -42,12 +49,6 @@ export default function Navbar() {
           Projects
         </button>
 
-        <button
-          onClick={() => scrollToSection('about')}
-          className="hover:text-[#e66500] transition-colors duration-200 cursor-pointer"
-        >
-          About
-        </button>
       </div>
 
       {/* Mobile - Icon Menu */}

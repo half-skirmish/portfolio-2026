@@ -9,10 +9,18 @@ function LandingPage() {
   return (
     <div>
       <Navbar/>
-      <Hero/>
-      <About/>
-      <WorkExperience/>
-      <Projects/>
+      <section id="hero">
+        <Hero/>
+      </section>
+      <section id="about">
+        <About/>
+      </section>
+      <section id="work">
+        <WorkExperience/>
+      </section>
+      <section id="projects">
+        <Projects/>
+      </section>
       <Footer/>
     </div>
   )

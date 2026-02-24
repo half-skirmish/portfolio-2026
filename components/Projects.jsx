@@ -6,66 +6,66 @@ import Image from "next/image";
 
 export default function Projects() {
   const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-featured online shopping platform with cart management, payment integration, and admin dashboard for inventory management.",
-      techStack: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      image: "/projects/ecommerce.jpg", // Add your project images
-      githubLink: "https://github.com/yourusername/ecommerce",
-      liveLink: "https://ecommerce-demo.com",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description: "Real-time collaborative task management application with drag-and-drop functionality, team collaboration features, and progress tracking.",
-      techStack: ["Next.js", "Firebase", "TypeScript", "Framer Motion"],
-      image: "/projects/taskapp.jpg",
-      githubLink: "https://github.com/yourusername/taskapp",
-      liveLink: "https://taskapp-demo.com",
-      featured: true
-    },
-    {
-      id: 3,
-      title: "Weather Dashboard",
-      description: "Interactive weather dashboard displaying current weather, forecasts, and climate data visualization using real-time APIs.",
-      techStack: ["React", "OpenWeather API", "Chart.js", "CSS3"],
-      image: "/projects/weather.jpg",
-      githubLink: "https://github.com/yourusername/weather",
-      liveLink: "https://weather-demo.com",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Portfolio Generator",
-      description: "SaaS application that allows users to create and customize professional portfolio websites using pre-built templates.",
-      techStack: ["Vue.js", "Express", "PostgreSQL", "AWS"],
-      image: "/projects/portfolio.jpg",
-      githubLink: "https://github.com/yourusername/portfolio-gen",
-      liveLink: "https://portfolio-gen-demo.com",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "Social Media Analytics",
-      description: "Analytics dashboard for tracking social media performance across multiple platforms with detailed insights and reporting.",
-      techStack: ["React", "D3.js", "Node.js", "MySQL", "Redis"],
-      image: "/projects/analytics.jpg",
-      githubLink: "https://github.com/yourusername/analytics",
-      liveLink: "https://analytics-demo.com",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "AI Chatbot Assistant",
-      description: "Intelligent chatbot powered by machine learning that provides customer support and handles common queries automatically.",
-      techStack: ["Python", "TensorFlow", "React", "FastAPI", "Docker"],
-      image: "/projects/chatbot.jpg",
-      githubLink: "https://github.com/yourusername/chatbot",
-      liveLink: "https://chatbot-demo.com",
-      featured: true
-    }
+      {
+    id: 1,
+    title: "AI Interview Platform",
+    description: "Gemini-powered hiring system conducting automated technical interviews and SWOT evaluations.",
+    techStack: ["FastAPI", "React", "Firestore", "Cloud Tasks", "Gemini AI"],
+    image: "/projects/ai-interview.jpg",
+    githubLink: "https://github.com/naman-1905",
+    liveLink: "https://your-live-demo.com",
+    featured: false
+  },
+  {
+    id: 2,
+    title: "EMI Shopping Platform",
+    description: "Cloud-native e-commerce platform supporting dynamic EMI plans and pricing logic.",
+    techStack: ["Next.js", "Express", "PostgreSQL", "Docker", "Kubernetes"],
+    image: "/projects/emi.jpg",
+    githubLink: "https://github.com/naman-1905",
+    liveLink: "https://your-live-demo.com",
+    featured: false
+  },
+  {
+    id: 3,
+    title: "Finance Tracker",
+    description: "Microservice-based finance manager for tracking income and expenses securely.",
+    techStack: ["Next.js", "FastAPI", "Express", "Flask", "PostgreSQL"],
+    image: "/projects/finance.jpg",
+    githubLink: "https://github.com/naman-1905",
+    liveLink: "https://your-live-demo.com",
+    featured: false
+  },
+  {
+    id: 4,
+    title: "Kahichan",
+    description: "Interactive Japanese learning platform for Kanji, grammar and vocabulary.",
+    techStack: ["Next.js", "FastAPI", "MongoDB", "PostgreSQL"],
+    image: "/projects/kahichan.jpg",
+    githubLink: "https://github.com/naman-1905",
+    liveLink: "https://your-live-demo.com",
+    featured: false
+  },
+  {
+  id: 5,
+  title: "Personal AI Chatbot",
+  description: "Locally hosted AI chatbot powered by Gemma 1B running on GPU.",
+  techStack: ["Next.js", "Tailwind CSS", "Gemma", "Local AI"],
+  image: "/projects/chatbot.jpg",
+  githubLink: "https://github.com/naman-1905",
+  liveLink: "https://ai.halfskirmish.com",
+  featured: true
+},
+  {
+  id: 6,
+  title: "Weather App",
+  description: "Real-time weather app using IP geolocation and external API integration.",
+  techStack: ["Next.js", "Tailwind CSS", "WeatherAPI"],
+  image: "/projects/weather.jpg",
+  githubLink: "https://github.com/naman-1905/Weather-App",
+  liveLink: "https://your-live-demo.com",
+  featured: false
+}
   ];
 
   const containerVariants = {

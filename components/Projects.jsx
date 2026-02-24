@@ -98,7 +98,7 @@ export default function Projects() {
     <section className="relative w-full min-h-screen px-4 md:px-8 lg:px-12 py-20 overflow-hidden">
       
       {/* Background Glow */}
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[600px] md:h-[600px]
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-100 h-100 md:w-150 md:h-150
                       bg-[#e66500] opacity-5 blur-[150px] 
                       rounded-full -z-10" />
 
@@ -140,7 +140,7 @@ export default function Projects() {
                 whileHover={{ y: -10 }}
               >
                 {/* Project Image */}
-                <div className="relative w-full h-48 bg-gradient-to-br from-[#e66500]/20 to-transparent overflow-hidden">
+                <div className="relative w-full h-48 bg-linear-to-br from-[#e66500]/20 to-transparent overflow-hidden">
                   {/* Placeholder with project icon */}
                   <div className="w-full h-full flex items-center justify-center bg-black/40">
                     <IconComponent size={48} className="text-[#e66500]/50" />

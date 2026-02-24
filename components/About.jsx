@@ -6,26 +6,26 @@ import { Code2, Laptop, Lightbulb, Target } from "lucide-react";
 
 export default function About() {
   const skills = [
-    {
-      icon: <Code2 size={24} />,
-      title: "Clean Code",
-      description: "Writing maintainable and scalable code"
-    },
-    {
-      icon: <Laptop size={24} />,
-      title: "Responsive Design",
-      description: "Building seamless cross-platform experiences"
-    },
-    {
-      icon: <Lightbulb size={24} />,
-      title: "Problem Solving",
-      description: "Creative solutions to complex challenges"
-    },
-    {
-      icon: <Target size={24} />,
-      title: "Goal Oriented",
-      description: "Focused on delivering results"
-    }
+{
+    icon: <Code2 size={24} />,
+    title: "Full-Stack Development",
+    description: "Building end-to-end web applications using Next.js and FastAPI"
+  },
+  {
+    icon: <Laptop size={24} />,
+    title: "Secure Authentication",
+    description: "Builds robust auth systems using JWT, OAuth & SSO"
+  },
+  {
+    icon: <Lightbulb size={24} />,
+    title: "Cloud Deployment",
+    description: "Deploying scalable apps using Docker, CI/CD and Cloudflare"
+  },
+  {
+    icon: <Target size={24} />,
+    title: "UI/UX Focused",
+    description: "Creating intuitive and responsive user experiences"
+  }
   ];
 
   const fadeInLeft = {
@@ -67,7 +67,7 @@ export default function About() {
   };
 
   return (
-    <section className="relative w-full min-h-screen flex items-center px-4 md:px-8 lg:px-12 py-20 overflow-hidden">
+    <section className="relative w-full min-h-[40vh] flex items-center px-4 md:px-8 lg:px-12 py-20 overflow-hidden">
       
       {/* Background Glow */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]
@@ -134,7 +134,7 @@ export default function About() {
               <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-white/10 
                             bg-gradient-to-br from-[#e66500]/10 to-transparent">
                 <Image
-                  src="/namandp3.jpg"
+                  src="/143113865.jpg"
                   alt="About Me"
                   fill
                   className="object-cover grayscale"
@@ -152,8 +152,8 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
-                <div className="text-black font-bold text-2xl">3+</div>
-                <div className="text-black/80 text-sm font-medium">Years Experience</div>
+                <div className="text-black font-bold text-2xl">Being Better</div>
+                <div className="text-black/80 text-sm font-medium">Everyday</div>
               </motion.div>
             </div>
           </motion.div>
@@ -171,24 +171,17 @@ export default function About() {
                 I'm <span className="text-[#e66500]">Naman Chaturvedi</span>
               </h3>
               
-              <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                A passionate Full Stack Developer based in India, specializing in building 
-                exceptional digital experiences. I combine creativity with technical expertise 
-                to craft solutions that make a difference.
-              </p>
-              
-              <p className="text-gray-400 text-base leading-relaxed">
-                With over 3 years of experience in web development, I've worked on diverse 
-                projects ranging from e-commerce platforms to real-time collaboration tools. 
-                I'm proficient in modern technologies like React, Node.js, and cloud services, 
-                and I'm always eager to learn and adapt to new technologies.
-              </p>
+                <p className="text-gray-300 text-base md:text-lg leading-relaxed">
+                I’m a Full Stack Engineer based in India who enjoys building scalable and secure digital products. I work across the stack using technologies like Next.js, FastAPI and modern cloud platforms to create applications that are both high-performing and user-focused.
+                </p>
 
-              <p className="text-gray-400 text-base leading-relaxed">
-                When I'm not coding, you'll find me exploring new frameworks, contributing to 
-                open-source projects, or sharing knowledge with the developer community. I believe 
-                in writing clean, maintainable code and building products that users love.
-              </p>
+                <p className="text-gray-400 text-base leading-relaxed">
+                My experience spans software development, UI/UX design, and cybersecurity. I’ve worked on cloud-native systems, AI-driven platforms and microservice-based applications, contributing to real-world products like interview platforms, finance systems and distributed tools.
+                </p>
+
+                <p className="text-gray-400 text-base leading-relaxed">
+                I’m particularly interested in building secure, production-ready systems that balance performance with usability. Outside of work, I enjoy experimenting with AI, local infrastructure and new technologies that push my understanding of how modern software is built and deployed.
+                </p>
             </div>
 
             {/* CTA Buttons */}
@@ -206,7 +199,7 @@ export default function About() {
                 href="/resume.pdf"
                 download="Naman_Chaturvedi_resume.pdf"
                 className="px-6 py-3 rounded-lg bg-white/5 text-white font-medium text-sm md:text-base
-                         border-2 border-white/20 hover:bg-white/10 hover:border-[#e66500]/50 
+                         border-2 border-white/20 hover:bg-black hover:border-[#e66500]
                          transition-all duration-300"
               >
                 Download CV

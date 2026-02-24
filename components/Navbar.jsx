@@ -1,9 +1,18 @@
 "use client";
 
-import Link from "next/link";
 import { Home, Briefcase, FolderGit2, User } from "lucide-react";
 
 export default function Navbar() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 lg:px-8 py-3 md:py-4 lg:py-5 flex items-center justify-center text-white">
       
@@ -12,70 +21,70 @@ export default function Navbar() {
                      bg-white/10 backdrop-blur-xl border border-white/20 shadow-lg
                       text-xs md:text-sm font-medium">
 
-        <Link
-          href="/"
-          className="hover:text-[#e66500] transition-colors duration-200"
+        <button
+          onClick={() => scrollToSection('hero')}
+          className="hover:text-[#e66500] transition-colors duration-200 cursor-pointer"
         >
           Home
-        </Link>
+        </button>
 
-        <Link
-          href="#work"
-          className="hover:text-[#e66500] transition-colors duration-200"
+        <button
+          onClick={() => scrollToSection('work')}
+          className="hover:text-[#e66500] transition-colors duration-200 cursor-pointer"
         >
           Work
-        </Link>
+        </button>
 
-        <Link
-          href="#projects"
-          className="hover:text-[#e66500] transition-colors duration-200"
+        <button
+          onClick={() => scrollToSection('projects')}
+          className="hover:text-[#e66500] transition-colors duration-200 cursor-pointer"
         >
           Projects
-        </Link>
+        </button>
 
-        <Link
-          href="#about"
-          className="hover:text-[#e66500] transition-colors duration-200"
+        <button
+          onClick={() => scrollToSection('about')}
+          className="hover:text-[#e66500] transition-colors duration-200 cursor-pointer"
         >
           About
-        </Link>
+        </button>
       </div>
 
       {/* Mobile - Icon Menu */}
       <div className="flex sm:hidden items-center gap-8 px-4 py-2 rounded-full 
                      bg-white/10 backdrop-blur-xl border border-white/20 shadow-lg">
 
-        <Link
-          href="/"
+        <button
+          onClick={() => scrollToSection('hero')}
           className="p-2 hover:text-[#e66500] transition-colors duration-200"
           aria-label="Home"
         >
           <Home size={18} />
-        </Link>
+        </button>
 
-        <Link
-          href="#work"
+        <button
+          onClick={() => scrollToSection('work')}
           className="p-2 hover:text-[#e66500] transition-colors duration-200"
           aria-label="Work"
         >
           <Briefcase size={18} />
-        </Link>
+        </button>
 
-        <Link
-          href="#projects"
+        <button
+          onClick={() => scrollToSection('projects')}
           className="p-2 hover:text-[#e66500] transition-colors duration-200"
           aria-label="Projects"
         >
           <FolderGit2 size={18} />
-        </Link>
+        </button>
 
-        <Link
-          href="#about"
+        <button
+          onClick={() => scrollToSection('about')}
           className="p-2 hover:text-[#e66500] transition-colors duration-200"
           aria-label="About"
         >
           <User size={18} />
-        </Link>
+        </button>
       </div>
     </nav>
   );

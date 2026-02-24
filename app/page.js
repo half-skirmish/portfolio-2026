@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Projects from '@/components/Projects'
 import WorkExperience from '@/components/WorkExperience'
 import About from '@/components/About'
+import Footer from '@/components/Footer'
 
 function LandingPage() {
   return (
@@ -12,6 +13,7 @@ function LandingPage() {
       <About/>
       <WorkExperience/>
       <Projects/>
+      <Footer/>
     </div>
   )
 }

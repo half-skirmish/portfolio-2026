@@ -59,7 +59,7 @@ const experiences = [
     <section className="relative w-full min-h-[40vh] flex items-center px-4 md:px-8 lg:px-12 py-20 overflow-hidden">
       
       {/* Background Glow */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-75 h-75 md:w-100 md:h-100 lg:w-125 lg:h-125
                       bg-[#e66500] opacity-10 blur-[150px] 
                       rounded-full -z-10" />
 
@@ -85,7 +85,7 @@ const experiences = [
         <div className="relative">
           
           {/* Horizontal Line - Desktop */}
-          <div className="hidden lg:block absolute top-8 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#e66500]/30 to-transparent" />
+          <div className="hidden lg:block absolute top-8 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-[#e66500]/30 to-transparent" />
 
           {/* Timeline Items */}
           <motion.div 

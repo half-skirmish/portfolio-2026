@@ -134,10 +134,10 @@ export default function About() {
               <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-white/10 
                             bg-gradient-to-br from-[#e66500]/10 to-transparent">
                 <Image
-                  src="/about-image.jpg" // Replace with your image
+                  src="/namandp3.jpg"
                   alt="About Me"
                   fill
-                  className="object-cover"
+                  className="object-cover grayscale"
                 />
                 
                 {/* Overlay Gradient */}
@@ -194,7 +194,7 @@ export default function About() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="#contact"
+                href="mailto:namansdiaries@gmail.com"
                 className="px-6 py-3 rounded-lg bg-[#e66500] text-black font-bold text-sm md:text-base
                          border-2 border-[#e66500] hover:bg-black hover:text-[#e66500] 
                          transition-all duration-300"

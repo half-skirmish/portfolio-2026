@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import CursorTrail from "@/components/CursorTrail";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -15,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jakarta.variable}>
-      <body>{children}</body>
+      <body>
+        <CursorTrail />
+        {children}
+        </body>
     </html>
   );
 }

@@ -55,7 +55,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full min-h-screen flex items-center pt-28 px-4 md:px-8 lg:px-12 py-10 md:py-16 lg:py-20 overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-center pt-20 md:pt-24 lg:pt-28 px-4 md:px-8 lg:px-12 py-10 md:py-16 lg:py-20 overflow-hidden">
 
       {/* Subtle Orange Glow */}
       <div className="absolute left-0 top-0 w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]
@@ -77,7 +77,7 @@ export default function Hero() {
               className="text-gray-400 text-base md:text-lg mb-2"
               variants={fadeInUp}
             >
-              Hi I am
+              Hi, I am
             </motion.p>
             
             <motion.h1 

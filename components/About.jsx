@@ -172,15 +172,15 @@ export default function About() {
               </h3>
               
                 <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                I’m a Full Stack Engineer based in India who enjoys building scalable and secure digital products. I work across the stack using technologies like Next.js, FastAPI and modern cloud platforms to create applications that are both high-performing and user-focused.
+                Hi, I am Naman, a Full-Stack Developer and a UI/UX Designer. I have been passionate about computers and newer technological innovations right since I was 6 years old. Growing up, I have seen the technology around me, evolve, and it has been a significant part of my life.
                 </p>
 
                 <p className="text-gray-400 text-base leading-relaxed">
-                My experience spans software development, UI/UX design, and cybersecurity. I’ve worked on cloud-native systems, AI-driven platforms and microservice-based applications, contributing to real-world products like interview platforms, finance systems and distributed tools.
+                I work across a vast set of technologies which include Nextjs, MERN Stack, FastAPI, CI/CD Pipelines, Google Cloud Services, having hands-on experience in the Cybersecurity and UI/UX domains.
                 </p>
 
                 <p className="text-gray-400 text-base leading-relaxed">
-                I’m particularly interested in building secure, production-ready systems that balance performance with usability. Outside of work, I enjoy experimenting with AI, local infrastructure and new technologies that push my understanding of how modern software is built and deployed.
+                Apart from Software Development, I spend my time watching some science-fiction movies, reading books and switching to my Playstation, where I just stare at the home-screen, before I decide to go to sleep. 
                 </p>
             </div>
 

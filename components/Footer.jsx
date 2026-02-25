@@ -58,7 +58,7 @@ export default function Footer() {
           </h3>
 
           <p className="text-gray-400 text-sm leading-relaxed max-w-md">
-            Building scalable digital products with a focus on performance, security and user experience.
+            Software Developer | UI/UX Developer
           </p>
 
           {/* Social Links */}

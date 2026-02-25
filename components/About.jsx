@@ -180,7 +180,7 @@ export default function About() {
                 </p>
 
                 <p className="text-gray-400 text-base leading-relaxed">
-                Apart from Software Development, I spend my time watching some science-fiction movies, reading books and switching to my Playstation, where I just stare at the home-screen, before I decide to go to sleep. 
+                Apart from Software Development, I spend my time watching some science-fiction movies, reading books and switching to my Playstation, where I just stare at the home-screen, before deciding to go to sleep. 
                 </p>
             </div>
 

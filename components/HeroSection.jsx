@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   const [displayText, setDisplayText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
-  const fullText = "A Full Stack Developer";
+  const fullText = "A Full Stack Engineer";
   const typingSpeed = 150; // ms per character
 
   useEffect(() => {
